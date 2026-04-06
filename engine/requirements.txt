@@ -1,0 +1,4 @@
+# Finalised in Prompt 6.
+fastapi
+uvicorn
+pydantic
