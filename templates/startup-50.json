@@ -1,1 +1,164 @@
-{"_comment": "Flat 50-person startup sample. Populated in Prompt 2.", "roles": []}
+{
+  "roles": [
+    {
+      "id": "startup-ceo",
+      "title": "CEO / Founder",
+      "reports_to": null,
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.2, "building": 0.2, "customer_contact": 0.5, "people_development": 0.1},
+      "description": "Founder-CEO. Runs fundraising, sets product direction, still talks to every important customer."
+    },
+    {
+      "id": "startup-cto",
+      "title": "CTO / Co-founder",
+      "reports_to": "startup-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.15, "building": 0.55, "customer_contact": 0.1, "people_development": 0.2},
+      "description": "Technical co-founder. Still writes production code most days."
+    },
+    {
+      "id": "startup-eng-lead",
+      "title": "Engineering Lead",
+      "reports_to": "startup-cto",
+      "function": "engineering",
+      "level": "manager",
+      "headcount": 1,
+      "time_split": {"routing": 0.25, "building": 0.45, "customer_contact": 0.05, "people_development": 0.25},
+      "description": "Player-coach for a 12-person engineering team."
+    },
+    {
+      "id": "startup-eng-ic",
+      "title": "Software Engineer",
+      "reports_to": "startup-eng-lead",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 12,
+      "time_split": {"routing": 0.1, "building": 0.8, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Full-stack product engineers."
+    },
+    {
+      "id": "startup-design-ic",
+      "title": "Product Designer",
+      "reports_to": "startup-cto",
+      "function": "design",
+      "level": "IC",
+      "headcount": 3,
+      "time_split": {"routing": 0.1, "building": 0.55, "customer_contact": 0.3, "people_development": 0.05},
+      "description": "Owns end-to-end product design and user research."
+    },
+    {
+      "id": "startup-data-ic",
+      "title": "Data Scientist",
+      "reports_to": "startup-cto",
+      "function": "data",
+      "level": "IC",
+      "headcount": 2,
+      "time_split": {"routing": 0.15, "building": 0.7, "customer_contact": 0.1, "people_development": 0.05},
+      "description": "Builds analytics, owns the customer data model."
+    },
+    {
+      "id": "startup-pm",
+      "title": "Product Manager",
+      "reports_to": "startup-ceo",
+      "function": "product",
+      "level": "IC",
+      "headcount": 2,
+      "time_split": {"routing": 0.35, "building": 0.25, "customer_contact": 0.35, "people_development": 0.05},
+      "description": "Talks to customers, writes PRDs, unblocks engineers."
+    },
+    {
+      "id": "startup-cs-lead",
+      "title": "Head of Customer Success",
+      "reports_to": "startup-ceo",
+      "function": "customer_success",
+      "level": "manager",
+      "headcount": 1,
+      "time_split": {"routing": 0.2, "building": 0.1, "customer_contact": 0.55, "people_development": 0.15},
+      "description": "Runs CS for ~100 accounts, still on calls daily."
+    },
+    {
+      "id": "startup-cs-ic",
+      "title": "Customer Success Manager",
+      "reports_to": "startup-cs-lead",
+      "function": "customer_success",
+      "level": "IC",
+      "headcount": 6,
+      "time_split": {"routing": 0.2, "building": 0.1, "customer_contact": 0.65, "people_development": 0.05},
+      "description": "Owns 15-20 accounts each."
+    },
+    {
+      "id": "startup-sales-lead",
+      "title": "Head of Sales",
+      "reports_to": "startup-ceo",
+      "function": "sales",
+      "level": "manager",
+      "headcount": 1,
+      "time_split": {"routing": 0.25, "building": 0.05, "customer_contact": 0.55, "people_development": 0.15},
+      "description": "Closes enterprise deals directly; coaches AEs."
+    },
+    {
+      "id": "startup-ae",
+      "title": "Account Executive",
+      "reports_to": "startup-sales-lead",
+      "function": "sales",
+      "level": "IC",
+      "headcount": 5,
+      "time_split": {"routing": 0.15, "building": 0.05, "customer_contact": 0.75, "people_development": 0.05},
+      "description": "Mid-market AEs."
+    },
+    {
+      "id": "startup-marketing",
+      "title": "Head of Marketing",
+      "reports_to": "startup-ceo",
+      "function": "marketing",
+      "level": "manager",
+      "headcount": 1,
+      "time_split": {"routing": 0.2, "building": 0.55, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "One-person marketing function, does everything."
+    },
+    {
+      "id": "startup-ops",
+      "title": "Head of Operations",
+      "reports_to": "startup-ceo",
+      "function": "operations",
+      "level": "manager",
+      "headcount": 1,
+      "time_split": {"routing": 0.35, "building": 0.35, "customer_contact": 0.1, "people_development": 0.2},
+      "description": "Owns finance, HR, legal vendors, and office."
+    },
+    {
+      "id": "startup-recruiter",
+      "title": "Recruiter",
+      "reports_to": "startup-ops",
+      "function": "hr",
+      "level": "IC",
+      "headcount": 2,
+      "time_split": {"routing": 0.4, "building": 0.25, "customer_contact": 0.3, "people_development": 0.05},
+      "description": "Full-cycle recruiting."
+    },
+    {
+      "id": "startup-ops-coord",
+      "title": "Operations Coordinator",
+      "reports_to": "startup-ops",
+      "function": "operations",
+      "level": "IC",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.1, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Calendars, tooling admin, vendor coordination."
+    },
+    {
+      "id": "startup-finance",
+      "title": "Finance Lead",
+      "reports_to": "startup-ops",
+      "function": "finance",
+      "level": "IC",
+      "headcount": 1,
+      "time_split": {"routing": 0.3, "building": 0.55, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Owns FP&A, bookkeeping, investor reporting."
+    }
+  ]
+}
