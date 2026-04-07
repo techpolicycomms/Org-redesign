@@ -1,0 +1,524 @@
+{
+  "roles": [
+    {
+      "id": "ent-ceo",
+      "title": "CEO",
+      "reports_to": null,
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.55, "building": 0.05, "customer_contact": 0.25, "people_development": 0.15},
+      "description": "CEO of a 5000-person public enterprise."
+    },
+    {
+      "id": "ent-cto",
+      "title": "CTO",
+      "reports_to": "ent-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.7, "building": 0.05, "customer_contact": 0.1, "people_development": 0.15},
+      "description": "Runs 2000-person R&D organisation."
+    },
+    {
+      "id": "ent-cpo",
+      "title": "Chief Product Officer",
+      "reports_to": "ent-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.0, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "Owns product, design, research."
+    },
+    {
+      "id": "ent-cro",
+      "title": "Chief Revenue Officer",
+      "reports_to": "ent-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.65, "building": 0.0, "customer_contact": 0.25, "people_development": 0.1},
+      "description": "Runs go-to-market."
+    },
+    {
+      "id": "ent-cfo",
+      "title": "CFO",
+      "reports_to": "ent-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.7, "building": 0.1, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Finance, investor relations, corp dev."
+    },
+    {
+      "id": "ent-chro",
+      "title": "CHRO",
+      "reports_to": "ent-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.05, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Runs people org of 120."
+    },
+    {
+      "id": "ent-svp-eng-1",
+      "title": "SVP Engineering — Platform",
+      "reports_to": "ent-cto",
+      "function": "engineering",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.8, "building": 0.0, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Runs 400-person platform org."
+    },
+    {
+      "id": "ent-svp-eng-2",
+      "title": "SVP Engineering — Product",
+      "reports_to": "ent-cto",
+      "function": "engineering",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.8, "building": 0.0, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Runs 800-person product engineering org."
+    },
+    {
+      "id": "ent-vp-eng",
+      "title": "VP Engineering",
+      "reports_to": "ent-svp-eng-2",
+      "function": "engineering",
+      "level": "vp",
+      "headcount": 6,
+      "time_split": {"routing": 0.75, "building": 0.05, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Each runs ~120-person sub-org."
+    },
+    {
+      "id": "ent-sr-dir-eng",
+      "title": "Senior Director of Engineering",
+      "reports_to": "ent-vp-eng",
+      "function": "engineering",
+      "level": "director",
+      "headcount": 14,
+      "time_split": {"routing": 0.8, "building": 0.0, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Runs 40-60 engineers across 4-6 teams."
+    },
+    {
+      "id": "ent-dir-eng",
+      "title": "Director of Engineering",
+      "reports_to": "ent-sr-dir-eng",
+      "function": "engineering",
+      "level": "director",
+      "headcount": 35,
+      "time_split": {"routing": 0.75, "building": 0.05, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Runs 2-3 teams."
+    },
+    {
+      "id": "ent-sr-em",
+      "title": "Senior Engineering Manager",
+      "reports_to": "ent-dir-eng",
+      "function": "engineering",
+      "level": "senior_manager",
+      "headcount": 60,
+      "time_split": {"routing": 0.6, "building": 0.05, "customer_contact": 0.05, "people_development": 0.3},
+      "description": "Runs 2 teams of ~8."
+    },
+    {
+      "id": "ent-em",
+      "title": "Engineering Manager",
+      "reports_to": "ent-sr-em",
+      "function": "engineering",
+      "level": "manager",
+      "headcount": 110,
+      "time_split": {"routing": 0.5, "building": 0.1, "customer_contact": 0.05, "people_development": 0.35},
+      "description": "Runs a single team."
+    },
+    {
+      "id": "ent-staff-eng",
+      "title": "Staff/Principal Engineer",
+      "reports_to": "ent-dir-eng",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 40,
+      "time_split": {"routing": 0.35, "building": 0.55, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Cross-team technical leadership."
+    },
+    {
+      "id": "ent-senior-eng",
+      "title": "Senior Software Engineer",
+      "reports_to": "ent-em",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 720,
+      "time_split": {"routing": 0.2, "building": 0.7, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Product and platform engineers."
+    },
+    {
+      "id": "ent-eng",
+      "title": "Software Engineer",
+      "reports_to": "ent-em",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 620,
+      "time_split": {"routing": 0.15, "building": 0.8, "customer_contact": 0.0, "people_development": 0.05},
+      "description": "Mid-level engineers."
+    },
+    {
+      "id": "ent-tpm-dir",
+      "title": "Director of Program Management",
+      "reports_to": "ent-cto",
+      "function": "engineering",
+      "level": "director",
+      "headcount": 2,
+      "time_split": {"routing": 0.9, "building": 0.0, "customer_contact": 0.0, "people_development": 0.1},
+      "description": "Runs the TPM function."
+    },
+    {
+      "id": "ent-sr-tpm",
+      "title": "Senior TPM",
+      "reports_to": "ent-tpm-dir",
+      "function": "engineering",
+      "level": "senior_manager",
+      "headcount": 12,
+      "time_split": {"routing": 0.9, "building": 0.05, "customer_contact": 0.0, "people_development": 0.05},
+      "description": "Drives cross-org launches and dependencies."
+    },
+    {
+      "id": "ent-tpm",
+      "title": "TPM",
+      "reports_to": "ent-sr-tpm",
+      "function": "engineering",
+      "level": "manager",
+      "headcount": 35,
+      "time_split": {"routing": 0.9, "building": 0.05, "customer_contact": 0.0, "people_development": 0.05},
+      "description": "Embedded in engineering teams."
+    },
+    {
+      "id": "ent-vp-data",
+      "title": "VP Data & Analytics",
+      "reports_to": "ent-svp-eng-1",
+      "function": "data",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.05, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Owns data platform and analytics."
+    },
+    {
+      "id": "ent-sr-ds",
+      "title": "Senior Data Scientist",
+      "reports_to": "ent-vp-data",
+      "function": "data",
+      "level": "IC",
+      "headcount": 35,
+      "time_split": {"routing": 0.35, "building": 0.55, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Ad-hoc analysis plus model building."
+    },
+    {
+      "id": "ent-analyst",
+      "title": "Business Analyst",
+      "reports_to": "ent-vp-data",
+      "function": "data",
+      "level": "IC",
+      "headcount": 80,
+      "time_split": {"routing": 0.55, "building": 0.3, "customer_contact": 0.1, "people_development": 0.05},
+      "description": "Dashboards and exec reporting."
+    },
+    {
+      "id": "ent-svp-product",
+      "title": "SVP Product",
+      "reports_to": "ent-cpo",
+      "function": "product",
+      "level": "vp",
+      "headcount": 2,
+      "time_split": {"routing": 0.8, "building": 0.0, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Runs product management org."
+    },
+    {
+      "id": "ent-vp-product",
+      "title": "VP Product",
+      "reports_to": "ent-svp-product",
+      "function": "product",
+      "level": "vp",
+      "headcount": 6,
+      "time_split": {"routing": 0.75, "building": 0.05, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Owns a product line."
+    },
+    {
+      "id": "ent-dir-pm",
+      "title": "Director of Product",
+      "reports_to": "ent-vp-product",
+      "function": "product",
+      "level": "director",
+      "headcount": 18,
+      "time_split": {"routing": 0.7, "building": 0.05, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "Product area lead."
+    },
+    {
+      "id": "ent-gpm",
+      "title": "Group PM",
+      "reports_to": "ent-dir-pm",
+      "function": "product",
+      "level": "senior_manager",
+      "headcount": 40,
+      "time_split": {"routing": 0.65, "building": 0.1, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "Manages 3-4 PMs."
+    },
+    {
+      "id": "ent-pm",
+      "title": "Product Manager",
+      "reports_to": "ent-gpm",
+      "function": "product",
+      "level": "IC",
+      "headcount": 140,
+      "time_split": {"routing": 0.6, "building": 0.1, "customer_contact": 0.25, "people_development": 0.05},
+      "description": "One PM per team."
+    },
+    {
+      "id": "ent-vp-design",
+      "title": "VP Design",
+      "reports_to": "ent-cpo",
+      "function": "design",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.1, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Runs 100-person design org."
+    },
+    {
+      "id": "ent-dir-design",
+      "title": "Director of Design",
+      "reports_to": "ent-vp-design",
+      "function": "design",
+      "level": "director",
+      "headcount": 5,
+      "time_split": {"routing": 0.65, "building": 0.15, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Owns a design area."
+    },
+    {
+      "id": "ent-designer",
+      "title": "Product Designer",
+      "reports_to": "ent-dir-design",
+      "function": "design",
+      "level": "IC",
+      "headcount": 90,
+      "time_split": {"routing": 0.2, "building": 0.5, "customer_contact": 0.25, "people_development": 0.05},
+      "description": "Embedded in product teams."
+    },
+    {
+      "id": "ent-svp-sales",
+      "title": "SVP Sales",
+      "reports_to": "ent-cro",
+      "function": "sales",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.7, "building": 0.0, "customer_contact": 0.2, "people_development": 0.1},
+      "description": "Runs global sales."
+    },
+    {
+      "id": "ent-rvp-sales",
+      "title": "Regional VP Sales",
+      "reports_to": "ent-svp-sales",
+      "function": "sales",
+      "level": "vp",
+      "headcount": 6,
+      "time_split": {"routing": 0.65, "building": 0.0, "customer_contact": 0.25, "people_development": 0.1},
+      "description": "Owns a region."
+    },
+    {
+      "id": "ent-sales-dir",
+      "title": "Sales Director",
+      "reports_to": "ent-rvp-sales",
+      "function": "sales",
+      "level": "director",
+      "headcount": 22,
+      "time_split": {"routing": 0.6, "building": 0.0, "customer_contact": 0.3, "people_development": 0.1},
+      "description": "Runs a sales team."
+    },
+    {
+      "id": "ent-sales-mgr",
+      "title": "Sales Manager",
+      "reports_to": "ent-sales-dir",
+      "function": "sales",
+      "level": "manager",
+      "headcount": 50,
+      "time_split": {"routing": 0.5, "building": 0.05, "customer_contact": 0.35, "people_development": 0.1},
+      "description": "Direct line management of AEs."
+    },
+    {
+      "id": "ent-ae",
+      "title": "Account Executive",
+      "reports_to": "ent-sales-mgr",
+      "function": "sales",
+      "level": "IC",
+      "headcount": 550,
+      "time_split": {"routing": 0.2, "building": 0.05, "customer_contact": 0.7, "people_development": 0.05},
+      "description": "Enterprise and mid-market AEs."
+    },
+    {
+      "id": "ent-sdr",
+      "title": "SDR",
+      "reports_to": "ent-sales-mgr",
+      "function": "sales",
+      "level": "IC",
+      "headcount": 250,
+      "time_split": {"routing": 0.25, "building": 0.05, "customer_contact": 0.65, "people_development": 0.05},
+      "description": "Outbound prospecting."
+    },
+    {
+      "id": "ent-svp-cs",
+      "title": "SVP Customer Success",
+      "reports_to": "ent-cro",
+      "function": "customer_success",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.0, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "Runs 400-person CS org."
+    },
+    {
+      "id": "ent-cs-dir",
+      "title": "Director of Customer Success",
+      "reports_to": "ent-svp-cs",
+      "function": "customer_success",
+      "level": "director",
+      "headcount": 12,
+      "time_split": {"routing": 0.65, "building": 0.0, "customer_contact": 0.25, "people_development": 0.1},
+      "description": "Regional CS leadership."
+    },
+    {
+      "id": "ent-csm",
+      "title": "Customer Success Manager",
+      "reports_to": "ent-cs-dir",
+      "function": "customer_success",
+      "level": "IC",
+      "headcount": 400,
+      "time_split": {"routing": 0.35, "building": 0.05, "customer_contact": 0.55, "people_development": 0.05},
+      "description": "Owns accounts."
+    },
+    {
+      "id": "ent-vp-marketing",
+      "title": "VP Marketing",
+      "reports_to": "ent-cro",
+      "function": "marketing",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.7, "building": 0.1, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Runs marketing org of 150."
+    },
+    {
+      "id": "ent-dir-marketing",
+      "title": "Director of Marketing",
+      "reports_to": "ent-vp-marketing",
+      "function": "marketing",
+      "level": "director",
+      "headcount": 6,
+      "time_split": {"routing": 0.65, "building": 0.15, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Owns a marketing discipline."
+    },
+    {
+      "id": "ent-marketing-ic",
+      "title": "Marketing Manager",
+      "reports_to": "ent-dir-marketing",
+      "function": "marketing",
+      "level": "IC",
+      "headcount": 140,
+      "time_split": {"routing": 0.3, "building": 0.5, "customer_contact": 0.15, "people_development": 0.05},
+      "description": "Demand gen, content, brand, ops."
+    },
+    {
+      "id": "ent-vp-finance",
+      "title": "VP Finance",
+      "reports_to": "ent-cfo",
+      "function": "finance",
+      "level": "vp",
+      "headcount": 2,
+      "time_split": {"routing": 0.7, "building": 0.15, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Runs FP&A and accounting."
+    },
+    {
+      "id": "ent-finance-ic",
+      "title": "Finance Manager / Analyst",
+      "reports_to": "ent-vp-finance",
+      "function": "finance",
+      "level": "IC",
+      "headcount": 120,
+      "time_split": {"routing": 0.5, "building": 0.4, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Reporting, planning, accounting."
+    },
+    {
+      "id": "ent-vp-ops",
+      "title": "VP Business Operations",
+      "reports_to": "ent-cfo",
+      "function": "operations",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.75, "building": 0.1, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Runs biz ops and revops."
+    },
+    {
+      "id": "ent-ops-ic",
+      "title": "Operations Manager",
+      "reports_to": "ent-vp-ops",
+      "function": "operations",
+      "level": "IC",
+      "headcount": 60,
+      "time_split": {"routing": 0.55, "building": 0.3, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Process owners."
+    },
+    {
+      "id": "ent-proj-coord",
+      "title": "Project Coordinator",
+      "reports_to": "ent-vp-ops",
+      "function": "operations",
+      "level": "IC",
+      "headcount": 40,
+      "time_split": {"routing": 0.9, "building": 0.0, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Schedules, decks, notes, status."
+    },
+    {
+      "id": "ent-vp-hr",
+      "title": "VP People",
+      "reports_to": "ent-chro",
+      "function": "hr",
+      "level": "vp",
+      "headcount": 2,
+      "time_split": {"routing": 0.75, "building": 0.1, "customer_contact": 0.05, "people_development": 0.1},
+      "description": "Runs HRBPs and people ops."
+    },
+    {
+      "id": "ent-hrbp",
+      "title": "HR Business Partner",
+      "reports_to": "ent-vp-hr",
+      "function": "hr",
+      "level": "IC",
+      "headcount": 35,
+      "time_split": {"routing": 0.75, "building": 0.1, "customer_contact": 0.1, "people_development": 0.05},
+      "description": "Partners with leaders."
+    },
+    {
+      "id": "ent-recruiter",
+      "title": "Recruiter",
+      "reports_to": "ent-vp-hr",
+      "function": "hr",
+      "level": "IC",
+      "headcount": 50,
+      "time_split": {"routing": 0.5, "building": 0.2, "customer_contact": 0.25, "people_development": 0.05},
+      "description": "Full-cycle recruiters."
+    },
+    {
+      "id": "ent-vp-legal",
+      "title": "VP Legal",
+      "reports_to": "ent-cfo",
+      "function": "legal",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.6, "building": 0.3, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Runs 40-person legal org."
+    },
+    {
+      "id": "ent-counsel",
+      "title": "Corporate Counsel",
+      "reports_to": "ent-vp-legal",
+      "function": "legal",
+      "level": "IC",
+      "headcount": 35,
+      "time_split": {"routing": 0.35, "building": 0.55, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Contracts, compliance, employment, IP."
+    }
+  ]
+}

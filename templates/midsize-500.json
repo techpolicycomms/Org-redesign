@@ -1,0 +1,354 @@
+{
+  "roles": [
+    {
+      "id": "mid-ceo",
+      "title": "CEO",
+      "reports_to": null,
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.45, "building": 0.1, "customer_contact": 0.3, "people_development": 0.15},
+      "description": "CEO of a 500-person Series C SaaS company."
+    },
+    {
+      "id": "mid-cto",
+      "title": "CTO",
+      "reports_to": "mid-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.55, "building": 0.15, "customer_contact": 0.1, "people_development": 0.2},
+      "description": "No longer codes; runs the 180-person R&D org."
+    },
+    {
+      "id": "mid-cpo",
+      "title": "CPO",
+      "reports_to": "mid-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.6, "building": 0.1, "customer_contact": 0.2, "people_development": 0.1},
+      "description": "Owns product, design, and research."
+    },
+    {
+      "id": "mid-cro",
+      "title": "CRO",
+      "reports_to": "mid-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.5, "building": 0.05, "customer_contact": 0.35, "people_development": 0.1},
+      "description": "Runs sales, CS, marketing."
+    },
+    {
+      "id": "mid-cfo",
+      "title": "CFO",
+      "reports_to": "mid-ceo",
+      "function": "executive",
+      "level": "c_suite",
+      "headcount": 1,
+      "time_split": {"routing": 0.55, "building": 0.2, "customer_contact": 0.1, "people_development": 0.15},
+      "description": "Finance, legal, ops."
+    },
+    {
+      "id": "mid-vp-eng",
+      "title": "VP Engineering",
+      "reports_to": "mid-cto",
+      "function": "engineering",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.65, "building": 0.05, "customer_contact": 0.05, "people_development": 0.25},
+      "description": "Owns product engineering and infrastructure."
+    },
+    {
+      "id": "mid-vp-infra",
+      "title": "VP Platform",
+      "reports_to": "mid-cto",
+      "function": "engineering",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.6, "building": 0.15, "customer_contact": 0.05, "people_development": 0.2},
+      "description": "Owns infra, data platform, security."
+    },
+    {
+      "id": "mid-dir-eng",
+      "title": "Director of Engineering",
+      "reports_to": "mid-vp-eng",
+      "function": "engineering",
+      "level": "director",
+      "headcount": 4,
+      "time_split": {"routing": 0.7, "building": 0.05, "customer_contact": 0.05, "people_development": 0.2},
+      "description": "Each runs 2-4 teams within product engineering."
+    },
+    {
+      "id": "mid-em",
+      "title": "Engineering Manager",
+      "reports_to": "mid-dir-eng",
+      "function": "engineering",
+      "level": "manager",
+      "headcount": 14,
+      "time_split": {"routing": 0.45, "building": 0.15, "customer_contact": 0.05, "people_development": 0.35},
+      "description": "Owns a single team of 6-8 engineers."
+    },
+    {
+      "id": "mid-staff-eng",
+      "title": "Staff Engineer",
+      "reports_to": "mid-dir-eng",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 8,
+      "time_split": {"routing": 0.25, "building": 0.65, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Cross-cutting technical leadership."
+    },
+    {
+      "id": "mid-senior-eng",
+      "title": "Senior Software Engineer",
+      "reports_to": "mid-em",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 85,
+      "time_split": {"routing": 0.15, "building": 0.75, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Product engineers."
+    },
+    {
+      "id": "mid-eng",
+      "title": "Software Engineer",
+      "reports_to": "mid-em",
+      "function": "engineering",
+      "level": "IC",
+      "headcount": 60,
+      "time_split": {"routing": 0.1, "building": 0.85, "customer_contact": 0.0, "people_development": 0.05},
+      "description": "Mid-level engineers."
+    },
+    {
+      "id": "mid-tpm",
+      "title": "Technical Program Manager",
+      "reports_to": "mid-vp-eng",
+      "function": "engineering",
+      "level": "senior_manager",
+      "headcount": 4,
+      "time_split": {"routing": 0.85, "building": 0.05, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Runs cross-team launches and dependency tracking."
+    },
+    {
+      "id": "mid-dir-data",
+      "title": "Director of Data",
+      "reports_to": "mid-vp-infra",
+      "function": "data",
+      "level": "director",
+      "headcount": 1,
+      "time_split": {"routing": 0.6, "building": 0.15, "customer_contact": 0.05, "people_development": 0.2},
+      "description": "Owns analytics, ML, and the data platform."
+    },
+    {
+      "id": "mid-ds",
+      "title": "Data Scientist",
+      "reports_to": "mid-dir-data",
+      "function": "data",
+      "level": "IC",
+      "headcount": 14,
+      "time_split": {"routing": 0.3, "building": 0.55, "customer_contact": 0.1, "people_development": 0.05},
+      "description": "Spends a lot of time as a human query interface for execs."
+    },
+    {
+      "id": "mid-vp-product",
+      "title": "VP Product",
+      "reports_to": "mid-cpo",
+      "function": "product",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.7, "building": 0.05, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "Runs the PM org."
+    },
+    {
+      "id": "mid-dir-pm",
+      "title": "Director of Product",
+      "reports_to": "mid-vp-product",
+      "function": "product",
+      "level": "director",
+      "headcount": 3,
+      "time_split": {"routing": 0.65, "building": 0.1, "customer_contact": 0.15, "people_development": 0.1},
+      "description": "Owns a product area."
+    },
+    {
+      "id": "mid-pm",
+      "title": "Product Manager",
+      "reports_to": "mid-dir-pm",
+      "function": "product",
+      "level": "IC",
+      "headcount": 16,
+      "time_split": {"routing": 0.55, "building": 0.15, "customer_contact": 0.25, "people_development": 0.05},
+      "description": "One PM per team."
+    },
+    {
+      "id": "mid-dir-design",
+      "title": "Director of Design",
+      "reports_to": "mid-cpo",
+      "function": "design",
+      "level": "director",
+      "headcount": 1,
+      "time_split": {"routing": 0.55, "building": 0.25, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Runs design org of 18."
+    },
+    {
+      "id": "mid-designer",
+      "title": "Product Designer",
+      "reports_to": "mid-dir-design",
+      "function": "design",
+      "level": "IC",
+      "headcount": 16,
+      "time_split": {"routing": 0.15, "building": 0.5, "customer_contact": 0.3, "people_development": 0.05},
+      "description": "Embedded in product teams."
+    },
+    {
+      "id": "mid-vp-sales",
+      "title": "VP Sales",
+      "reports_to": "mid-cro",
+      "function": "sales",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.55, "building": 0.05, "customer_contact": 0.3, "people_development": 0.1},
+      "description": "Runs the sales org."
+    },
+    {
+      "id": "mid-sales-dir",
+      "title": "Sales Director",
+      "reports_to": "mid-vp-sales",
+      "function": "sales",
+      "level": "director",
+      "headcount": 3,
+      "time_split": {"routing": 0.55, "building": 0.05, "customer_contact": 0.3, "people_development": 0.1},
+      "description": "Regional sales leads."
+    },
+    {
+      "id": "mid-ae",
+      "title": "Account Executive",
+      "reports_to": "mid-sales-dir",
+      "function": "sales",
+      "level": "IC",
+      "headcount": 55,
+      "time_split": {"routing": 0.15, "building": 0.05, "customer_contact": 0.75, "people_development": 0.05},
+      "description": "Enterprise AEs."
+    },
+    {
+      "id": "mid-sdr",
+      "title": "SDR",
+      "reports_to": "mid-sales-dir",
+      "function": "sales",
+      "level": "IC",
+      "headcount": 30,
+      "time_split": {"routing": 0.2, "building": 0.05, "customer_contact": 0.7, "people_development": 0.05},
+      "description": "Outbound prospecting."
+    },
+    {
+      "id": "mid-vp-cs",
+      "title": "VP Customer Success",
+      "reports_to": "mid-cro",
+      "function": "customer_success",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.6, "building": 0.05, "customer_contact": 0.25, "people_development": 0.1},
+      "description": "Runs CS for ~1,000 accounts."
+    },
+    {
+      "id": "mid-csm",
+      "title": "Customer Success Manager",
+      "reports_to": "mid-vp-cs",
+      "function": "customer_success",
+      "level": "IC",
+      "headcount": 45,
+      "time_split": {"routing": 0.3, "building": 0.05, "customer_contact": 0.6, "people_development": 0.05},
+      "description": "Owns book of accounts."
+    },
+    {
+      "id": "mid-vp-marketing",
+      "title": "VP Marketing",
+      "reports_to": "mid-cro",
+      "function": "marketing",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.55, "building": 0.25, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Runs marketing org of 30."
+    },
+    {
+      "id": "mid-marketing-ic",
+      "title": "Marketing Manager",
+      "reports_to": "mid-vp-marketing",
+      "function": "marketing",
+      "level": "IC",
+      "headcount": 28,
+      "time_split": {"routing": 0.25, "building": 0.55, "customer_contact": 0.15, "people_development": 0.05},
+      "description": "Demand gen, content, brand, lifecycle."
+    },
+    {
+      "id": "mid-vp-ops",
+      "title": "VP Operations",
+      "reports_to": "mid-cfo",
+      "function": "operations",
+      "level": "vp",
+      "headcount": 1,
+      "time_split": {"routing": 0.6, "building": 0.2, "customer_contact": 0.05, "people_development": 0.15},
+      "description": "Runs finance ops, revops, biz ops."
+    },
+    {
+      "id": "mid-finance-ic",
+      "title": "Finance Analyst",
+      "reports_to": "mid-vp-ops",
+      "function": "finance",
+      "level": "IC",
+      "headcount": 12,
+      "time_split": {"routing": 0.4, "building": 0.5, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "FP&A, accounting, revops."
+    },
+    {
+      "id": "mid-dir-hr",
+      "title": "Director of People",
+      "reports_to": "mid-cfo",
+      "function": "hr",
+      "level": "director",
+      "headcount": 1,
+      "time_split": {"routing": 0.65, "building": 0.15, "customer_contact": 0.1, "people_development": 0.1},
+      "description": "Runs people ops, recruiting, L&D."
+    },
+    {
+      "id": "mid-hrbp",
+      "title": "HR Business Partner",
+      "reports_to": "mid-dir-hr",
+      "function": "hr",
+      "level": "IC",
+      "headcount": 4,
+      "time_split": {"routing": 0.7, "building": 0.1, "customer_contact": 0.15, "people_development": 0.05},
+      "description": "Partners with function VPs."
+    },
+    {
+      "id": "mid-recruiter",
+      "title": "Recruiter",
+      "reports_to": "mid-dir-hr",
+      "function": "hr",
+      "level": "IC",
+      "headcount": 8,
+      "time_split": {"routing": 0.45, "building": 0.2, "customer_contact": 0.3, "people_development": 0.05},
+      "description": "Full-cycle recruiting."
+    },
+    {
+      "id": "mid-legal",
+      "title": "Corporate Counsel",
+      "reports_to": "mid-cfo",
+      "function": "legal",
+      "level": "IC",
+      "headcount": 4,
+      "time_split": {"routing": 0.35, "building": 0.55, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Contracts, compliance, employment."
+    },
+    {
+      "id": "mid-proj-coord",
+      "title": "Project Coordinator",
+      "reports_to": "mid-vp-ops",
+      "function": "operations",
+      "level": "IC",
+      "headcount": 6,
+      "time_split": {"routing": 0.85, "building": 0.05, "customer_contact": 0.05, "people_development": 0.05},
+      "description": "Schedules, documents, chases status."
+    }
+  ]
+}
